@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hammad Ilyas — 3D Visualizer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-m6bK7f2Z2NQKZpVbQ0s3p6p0YQ0F8u8r6JjQbKx9g6fQ2nb0jQ1s1gYQY/3aVvXnGZxX8nqQG9kw5cWb8W9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div id="brandBtn" class="brand">Hammad Ilyas</div>
+    <div class="top-actions">
+      <button id="viewDesignerBtn" class="top-btn"><i class="fa-solid fa-user"></i>View Designer</button>
+      <a href="#contact" class="top-btn contact"><i class="fa-solid fa-envelope"></i>Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="hero" class="hero">
+      <img class="hero-bg" src="images/lounge-1.jpg" alt="hero background (room-1)">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-left">
+        <h1 class="fade-in staged" data-delay="200">Hammad Ilyas</h1>
+        <h3 class="fade-in staged" data-delay="600">3D Visualizer</h3>
+        <p class="tagline fade-in staged" data-delay="1000">Creates Elegant and Functional 3D Interiors</p>
+        <p class="desc fade-in staged" data-delay="1300">I design 3D spaces that balance elegance, functionality, and the unique vision of each client.</p>
+        <div class="hero-ctas fade-in staged" data-delay="1600">
+          <a href="#designs" class="btn primary">Explore My Designs</a>
+        </div>
+      </div>
+
+      <div id="profileCard" class="profile-card" aria-hidden="false">
+        <img src="images/profile.jpg" alt="Profile photo">
+      </div>
+
+      <button id="scrollHint" class="scroll-hint" aria-label="Go to designs">
+        <!--span>My Designs</span-->
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+    </section>
+
+    <!-- DESIGNS -->
+    <section id="designs" class="section">
+      <div class="section-head">
+        <h2>My Designs</h2>
+        <p class="muted">  </p>
+      </div>
+
+      <div class="slider-wrap" aria-live="polite">
+        <button class="slider-arrow left" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div id="slider" class="slider">
+          <!-- slides: keep these names and add more as <figure class="slide"> blocks -->
+          <!-- Each slide must contain <img src="images/..." alt="..."> and <figcaption class="label">Label</figcaption> -->
+          <figure class="slide">
+            <img src="images/render-1.jpg" alt="Kitchen Design">
+            <figcaption class="label">Kitchen Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/render-2.jpg" alt="Kitchen Design">
+            <figcaption class="label">Kitchen Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/kitchen-2.jpg" alt="Kitchen Design">
+            <figcaption class="label">Kitchen Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/kitchen-3.jpg" alt="Kitchen Design">
+            <figcaption class="label">Kitchen Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/kitchen-4.jpeg" alt="Kitchen Design">
+            <figcaption class="label">Kitchen Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/kitchen-5.jpeg" alt="Kitchen Design">
+            <figcaption class="label">Kitchen Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/office-1.jpeg" alt="Office Design">
+            <figcaption class="label">Office Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/office-2.jpeg" alt="Office Design">
+            <figcaption class="label">Office Design</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/lounge-1.jpg" alt="Lounge Design">
+            <figcaption class="label">Lounge Design</figcaption>
+          </figure>
+        </div>
+
+        <button class="slider-arrow right" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div id="dots" class="dots" role="tablist" aria-label="Slide navigation"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-soft">
+      <div class="divider"></div>
+      <div class="experience-card">
+        <h2>Experience</h2>
+        <p class="muted">3 YEARS experience as a 3D Visualizer — Designer Square</p>
+        <p class="muted">2 YEARS experience as a 3D Modeler — The Location Lab</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-area">
+      <div class="about-grid">
+        <div class="about-box">
+          <h2>About Me</h2>
+          <p>I’m passionate about creating meaningful visual spaces that combine aesthetics with real-world function. I focus on composition, lighting and materials to deliver photorealistic renders that meet client objectives.</p>
+
+          <div class="cta-row">
+            <button id="previewCv" class="btn-outline">Preview CV</button>
+            <!--button id="previewCert" class="btn-outline">Preview Certificate</button-->
+          </div>
+        </div>
+
+        <aside class="softwares">
+          <h3>Softwares</h3>
+          <ul>
+            <li>3ds Max + Corona Render</li>
+            <li>Photoshop</li>
+            <li>AutoCAD</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-area">
+      <div class="contact-box">
+        <h2>Contact</h2>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:hammadilyas0316@gmail.com"><i class="fa-solid fa-envelope"></i> hammadilyas0316@gmail.com</a>
+          <a class="contact-item" href="tel:03132251226"><i class="fa-solid fa-phone"></i> 0313-2251226</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL (image previews for CV / certificate) -->
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modalClose" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <img id="modalImg" src="" alt="Preview">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
